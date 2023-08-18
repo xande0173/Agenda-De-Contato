@@ -1,0 +1,27 @@
+
+INSERT INTO `categorias`(`categoria_Id`, `Categoria_Descricao`, `Flag`) VALUES ('G','Categoria Geral',0);
+INSERT INTO `categorias`(`categoria_Id`, `Categoria_Descricao`, `Flag`) VALUES ('F','Categoria Familia',0);
+INSERT INTO `categorias`(`categoria_Id`, `Categoria_Descricao`, `Flag`) VALUES ('T','Categoria Trabalho',0);
+INSERT INTO `categorias`(`categoria_Id`, `Categoria_Descricao`, `Flag`) VALUES ('A','Categoria Amigos',0);
+
+INSERT INTO `usuarios`(`Usuario`, `Senha`, `Administrador`, `UsuarioNome`, `Flag`) VALUES ('Erich','senac111',0,'Erich TII T3',0);
+INSERT INTO `usuarios`(`Usuario`, `Senha`, `Administrador`, `UsuarioNome`, `Flag`) VALUES ('Vinicius','senac111',0,'Vinicius TII T3',0);
+INSERT INTO `usuarios`(`Usuario`, `Senha`, `Administrador`, `UsuarioNome`, `Flag`) VALUES ('Geovana','senac111',0,'Geovana TII T3',0);
+INSERT INTO `usuarios`(`Usuario`, `Senha`, `Administrador`, `UsuarioNome`, `Flag`) VALUES ('Luiz','senac111',0,'Luiz TII T3',0);
+
+INSERT INTO `contatos`(`Contato_Nome`, `Email`, `CEP_Contato`, `Endereco_UF`,`Endereco_Cidade`,`Endereco_Bairro`,`Endereco_Rua`,`Endereco_Nro`, `Endereco_Compl`, `Favorito`, `Flag`, `Fk_Usuario`, `Fk_Categoria`) VALUES ('Erich Valarini','senac@senac.edu.br',19100400,'SP','Pres. Prudente','Centro','Rua da Tecnologia',2881,'Predio',0,0,'Erich','G');
+INSERT INTO `contatos`(`Contato_Nome`, `Email`, `CEP_Contato`, `Endereco_UF`,`Endereco_Cidade`,`Endereco_Bairro`,`Endereco_Rua`, `Endereco_Nro`, `Endereco_Compl`, `Favorito`, `Flag`, `Fk_Usuario`, `Fk_Categoria`) VALUES ('Vinicius Soares','senac@senac.edu.br',19100400,'SP','Pres. Prudente','Centro','Rua da Tecnologia',2881,'Predio',0,0,'Vinicius','G');
+INSERT INTO `contatos`(`Contato_Nome`, `Email`, `CEP_Contato`, `Endereco_UF`,`Endereco_Cidade`,`Endereco_Bairro`,`Endereco_Rua`, `Endereco_Nro`, `Endereco_Compl`, `Favorito`, `Flag`, `Fk_Usuario`, `Fk_Categoria`) VALUES ('Geovana Bicalhu','senac@senac.edu.br',19100400,'SP','Pres. Prudente','Centro','Rua da Tecnologia',2881,'Predio',0,0,'Geovana','G');
+INSERT INTO `contatos`(`Contato_Nome`, `Email`, `CEP_Contato`, `Endereco_UF`,`Endereco_Cidade`,`Endereco_Bairro`,`Endereco_Rua`, `Endereco_Nro`, `Endereco_Compl`, `Favorito`, `Flag`, `Fk_Usuario`, `Fk_Categoria`) VALUES ('Luiz Gustavo de Souza','senac@senac.edu.br',19100400,'SP','Pres. Prudente','Centro','Rua da Tecnologia',2881,'Predio',0,0,'Luiz','G');
+
+INSERT INTO `telefones`(`Telefone_Nro`, `Telefone_Tipo`, `Telefone_DDI`, `Telefone_DDD`, `Flag`, `Fk_Id_Contato`)
+     VALUES (921213344,1,55,18,0,1);
+INSERT INTO `telefones`(`Telefone_Nro`, `Telefone_Tipo`, `Telefone_DDI`, `Telefone_DDD`, `Flag`, `Fk_Id_Contato`)
+     VALUES (921213345,1,55,18,0,2);
+INSERT INTO `telefones`(`Telefone_Nro`, `Telefone_Tipo`, `Telefone_DDI`, `Telefone_DDD`, `Flag`, `Fk_Id_Contato`)
+     VALUES (921213346,1,55,18,0,3);
+INSERT INTO `telefones`(`Telefone_Nro`, `Telefone_Tipo`, `Telefone_DDI`, `Telefone_DDD`, `Flag`, `Fk_Id_Contato`)
+     VALUES (921213347,1,55,18,0,4);
+
+
+
